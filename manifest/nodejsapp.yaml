@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: auth-service
-        image: 288761769499.dkr.ecr.ap-south-1.amazonaws.com/auth-service:amodh
+        image: 288761769499.dkr.ecr.ap-south-1.amazonaws.com/auth-service:latest
         ports:
         - containerPort: 3001
         env:
