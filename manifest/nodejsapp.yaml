@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: auth-service
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: auth-service
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: auth-service
-        image: 288761769499.dkr.ecr.ap-south-1.amazonaws.com/auth-service:latest
+        image: 288761769499.dkr.ecr.ap-south-1.amazonaws.com/auth-service:amodh
         ports:
         - containerPort: 3001
         env:
